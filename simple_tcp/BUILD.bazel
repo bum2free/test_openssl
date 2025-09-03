@@ -1,0 +1,13 @@
+cc_binary(
+    name = "server",
+    srcs = ["server.cpp"],
+    copts = ["-Wall", "-Wextra", "-O2"],
+    linkopts = ["-lssl", "-lcrypto"],
+)
+
+cc_binary(
+    name = "client",
+    srcs = ["client.cpp"],
+    copts = ["-Wall", "-Wextra", "-O2"],
+    linkopts = ["-lssl", "-lcrypto"],
+)

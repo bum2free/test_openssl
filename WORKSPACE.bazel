@@ -1,0 +1,4 @@
+# Minimal Bazel workspace file for the OpenSSL TCP examples.
+# Add external repositories here if needed.
+
+workspace(name = "test_openssl")
